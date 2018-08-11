@@ -4,7 +4,12 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <linux/i2c.h>
 #include <linux/i2c-dev.h>
+#include <string.h>
+#include <sys/ioctl.h>
+#include <i2c/smbus.h>
+#include <unistd.h>
 #include "edid.h"
 
 #define I2CBUS 1
